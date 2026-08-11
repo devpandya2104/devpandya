@@ -211,11 +211,41 @@ export const builds: Build[] = [
   },
 ];
 
-export const conferences = [
-  { name: "SEOMastery Vietnam", location: "Vietnam" },
-  { name: "CMSEO Chiang Mai", location: "Thailand" },
-  { name: "Phuket SEO Summit", location: "Thailand" },
-] as const;
+export type Conference = {
+  id: string;
+  name: string;
+  location: string;
+  date: string;
+  url: string;
+  monogram: string;
+};
+
+export const conferences: Conference[] = [
+  {
+    id: "seomastery",
+    name: "SEOMastery Vietnam",
+    location: "Vietnam",
+    date: "March 2025",
+    url: "https://seomasterysummit.com/",
+    monogram: "SM",
+  },
+  {
+    id: "cmseo",
+    name: "CMSEO Chiang Mai",
+    location: "Thailand",
+    date: "November 2025",
+    url: "https://chiangmaiseoconference.com/",
+    monogram: "CM",
+  },
+  {
+    id: "phuket",
+    name: "Phuket SEO Summit",
+    location: "Thailand",
+    date: "April 2026",
+    url: "https://phuketsummit.com/",
+    monogram: "PS",
+  },
+];
 
 export const markets = ["India", "United Kingdom", "United States", "Europe"] as const;
 

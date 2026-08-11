@@ -10,8 +10,9 @@ const sections = [
   { href: "#experience", label: "Experience", index: "03" },
   { href: "#systems", label: "Systems", index: "04" },
   { href: "#operations", label: "Operations", index: "05" },
-  { href: "#skills", label: "Skills", index: "06" },
-  { href: "#contact", label: "Contact", index: "07" },
+  { href: "#conferences", label: "Conferences", index: "06" },
+  { href: "#skills", label: "Skills", index: "07" },
+  { href: "#contact", label: "Contact", index: "08" },
 ];
 
 export default function Nav() {
