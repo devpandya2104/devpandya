@@ -5,6 +5,7 @@ export const profile = {
   name: "Dev Pandya",
   initials: "DP",
   role: "Head of Department, Outbound Marketing & SEO",
+  company: "Amrytt Media LLC",
   location: "Ahmedabad, Gujarat, India",
   phone: "+91 7405555354",
   email: "devpandya2104@gmail.com",

@@ -24,7 +24,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="max-w-xs font-mono text-xs uppercase tracking-[0.25em] text-paper/60 sm:max-w-sm"
           >
-            {profile.role} · {profile.location}
+            {profile.role} <span className="text-signal">@</span> {profile.company} · {profile.location}
           </motion.p>
 
           <h1 className="mt-4 select-none font-display font-bold uppercase leading-[0.82] tracking-tight text-paper">
