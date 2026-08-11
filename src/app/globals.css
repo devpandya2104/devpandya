@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #0b0b0c;
+  --ink-soft: #17171a;
+  --paper: #f3eee4;
+  --paper-soft: #e8e0cf;
+  --signal: #ff4b1f;
+  --circuit: #c6ff3d;
+  --line-dark: rgba(243, 238, 228, 0.14);
+  --line-light: rgba(11, 11, 12, 0.14);
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-paper: var(--paper);
+  --color-paper-soft: var(--paper-soft);
+  --color-signal: var(--signal);
+  --color-circuit: var(--circuit);
+  --font-display: var(--font-space-grotesk);
+  --font-mono: var(--font-jetbrains-mono);
+  --font-body: var(--font-inter);
+  --animate-marquee: marquee 32s linear infinite;
+  --animate-marquee-slow: marquee 60s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--ink);
+}
+
+body {
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--font-body);
+  overflow-x: clip;
+}
+
+::selection {
+  background: var(--signal);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--circuit);
+  outline-offset: 3px;
+}
+
+.grain {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.text-outline {
+  -webkit-text-stroke: 1.5px var(--paper);
+  color: transparent;
+}
+
+@media (min-width: 1024px) {
+  .cursor-none-desktop {
+    cursor: none;
+  }
+}
+
+.section-line {
+  border-color: var(--line-dark);
+}
+
+.light-section .section-line {
+  border-color: var(--line-light);
+}
+
+.light-section {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.light-section ::selection {
+  background: var(--ink);
+  color: var(--circuit);
+}
