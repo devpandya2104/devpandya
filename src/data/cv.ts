@@ -247,19 +247,6 @@ export const conferences: Conference[] = [
   },
 ];
 
-export const markets = ["India", "United Kingdom", "United States", "Europe"] as const;
-
-export const platforms = [
-  "Amazon Seller Central (UK & USA)",
-  "OTTO",
-  "Kaufland",
-  "ManoMano",
-  "eBay",
-  "Shopify",
-  "Magento",
-  "WordPress",
-] as const;
-
 export type SkillGroup = {
   id: string;
   label: string;

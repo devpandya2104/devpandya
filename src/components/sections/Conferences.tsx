@@ -6,7 +6,7 @@ export default function Conferences() {
   return (
     <section id="conferences" className="relative bg-ink px-5 py-24 sm:px-8 sm:py-32">
       <div className="mx-auto max-w-[1400px]">
-        <SectionHeading index="06" eyebrow="On the Circuit" title="Represented the Company" />
+        <SectionHeading index="05" eyebrow="On the Circuit" title="Represented the Company" />
         <FadeIn delay={0.1} className="mt-6 max-w-xl font-mono text-sm text-paper/50">
           Selected as company representative at international SEO industry events across Southeast Asia.
         </FadeIn>

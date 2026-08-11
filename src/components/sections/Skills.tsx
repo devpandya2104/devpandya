@@ -6,7 +6,7 @@ export default function Skills() {
   return (
     <section id="skills" className="relative bg-ink px-5 py-24 sm:px-8 sm:py-32">
       <div className="mx-auto max-w-[1400px]">
-        <SectionHeading index="07" eyebrow="Capability Matrix" title="The Toolkit" />
+        <SectionHeading index="06" eyebrow="Capability Matrix" title="The Toolkit" />
 
         <div className="mt-16 grid grid-cols-1 gap-px overflow-hidden rounded-3xl border border-paper/12 bg-paper/12 sm:grid-cols-2 lg:grid-cols-4">
           {skillGroups.map((group, i) => (

@@ -7,7 +7,7 @@ export default function Education() {
     <section id="education" className="light-section relative px-5 py-24 sm:px-8 sm:py-32">
       <div className="mx-auto max-w-[1400px] grid grid-cols-1 gap-14 lg:grid-cols-12 lg:gap-8">
         <div className="lg:col-span-7">
-          <SectionHeading index="08" eyebrow="Education" title="Foundation" light />
+          <SectionHeading index="07" eyebrow="Education" title="Foundation" light />
           <div className="mt-12 flex flex-col gap-8">
             {education.map((item) => (
               <FadeIn key={item.id} className="border-b border-ink/10 pb-6">

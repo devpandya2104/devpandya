@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <section id="contact" className="relative overflow-hidden bg-ink px-5 py-24 sm:px-8 sm:py-36">
       <div className="mx-auto max-w-[1400px]">
-        <p className="font-mono text-xs uppercase tracking-[0.25em] text-paper/50">09 / Contact</p>
+        <p className="font-mono text-xs uppercase tracking-[0.25em] text-paper/50">08 / Contact</p>
 
         <RevealText
           as="h2"

@@ -4,7 +4,6 @@ import About from "@/components/sections/About";
 import Impact from "@/components/sections/Impact";
 import Experience from "@/components/sections/Experience";
 import Systems from "@/components/sections/Systems";
-import Operations from "@/components/sections/Operations";
 import Conferences from "@/components/sections/Conferences";
 import Skills from "@/components/sections/Skills";
 import Education from "@/components/sections/Education";
@@ -19,7 +18,6 @@ export default function Home() {
       <Impact />
       <Experience />
       <Systems />
-      <Operations />
       <Conferences />
       <Skills />
       <Education />
