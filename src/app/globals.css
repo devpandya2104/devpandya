@@ -42,13 +42,15 @@
 
 html {
   background: var(--ink);
+  overflow-x: hidden;
 }
 
 body {
   background: var(--ink);
   color: var(--paper);
   font-family: var(--font-body);
-  overflow-x: clip;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 ::selection {
