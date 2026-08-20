@@ -255,11 +255,6 @@ export type SkillGroup = {
 
 export const skillGroups: SkillGroup[] = [
   {
-    id: "ecommerce",
-    label: "E-commerce Platforms",
-    skills: ["Amazon Seller Central (UK & USA)", "OTTO", "Kaufland", "ManoMano", "eBay", "Shopify", "Magento", "WordPress"],
-  },
-  {
     id: "seo",
     label: "SEO & Outreach",
     skills: ["Blogger & Brand Outreach", "Link Building", "Content & Listing Optimization", "Outbound Marketing"],
@@ -273,6 +268,11 @@ export const skillGroups: SkillGroup[] = [
     id: "leadership",
     label: "Leadership & Strategy",
     skills: ["Team Leadership", "Strategic Negotiation", "Pricing & Profitability Analysis", "Business Development", "Stakeholder Communication", "Data Analysis & Reporting"],
+  },
+  {
+    id: "ecommerce",
+    label: "E-commerce Platforms",
+    skills: ["Amazon Seller Central (UK & USA)", "OTTO", "Kaufland", "ManoMano", "eBay", "Shopify", "Magento", "WordPress"],
   },
 ];
 
