@@ -11,7 +11,7 @@ export const profile = {
   email: "devpandya2104@gmail.com",
   linkedin: "https://www.linkedin.com/in/dev-pandya-21april",
   linkedinLabel: "linkedin.com/in/dev-pandya-21april",
-  resumeHref: "/resume/Dev-Pandya-Resume.docx",
+  resumeHref: "/resume/Dev-Pandya-Resume.pdf",
   summary:
     "E-commerce and digital outreach leader with 4+ years of progressive experience across marketplace operations, outbound marketing, brand partnerships, and SEO-driven outreach. Currently leads a 12-person outbound team and scaled a publisher network from 25,000 to 70,000 partners (180% growth) within one year through process redesign and AI-driven workflow automation. Recognized as a company representative at international SEO conferences across Southeast Asia. Combines operational discipline, relationship-building, and data-backed execution.",
   positioning:

@@ -27,7 +27,7 @@ src/
   lib/
     utils.ts                cn() classname helper
 public/
-  resume/                  Downloadable résumé (.docx, as supplied)
+  resume/                  Downloadable résumé (PDF)
   icon.svg                 Favicon
 ```
 
@@ -78,5 +78,4 @@ No environment variables are required — there is no `.env.example` because the
 ## Remaining inputs
 
 - **Professional photograph** — none was supplied with the CV, so the hero relies on kinetic typography and a generative network visual instead of a portrait. Drop a photo in `public/` and it can be integrated with an art-directed treatment (duotone/masked crop) if desired.
-- **Résumé PDF** — LibreOffice wasn't available in this environment to convert the source `.docx` to PDF, so the "Download Résumé" link currently serves the original `.docx` file at `public/resume/Dev-Pandya-Resume.docx`. Swap in a PDF at the same path (and update the `href` in `src/data/cv.ts` → `profile.resumeHref`) if a PDF is preferred.
 - **Social/professional links beyond LinkedIn** — the CV lists only LinkedIn. If there's a GitHub, X/Twitter, or personal blog to include, add it to `src/data/cv.ts`.

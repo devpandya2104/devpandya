@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion, useScroll, useSpring } from "framer-motion";
 import { profile } from "@/data/cv";
+import MagneticButton from "@/components/ui/MagneticButton";
 
 const sections = [
   { href: "#about", label: "About", index: "01" },
@@ -59,26 +60,37 @@ export default function Nav() {
           {profile.initials}<span className="text-signal">.</span>
         </a>
 
-        <button
-          type="button"
-          data-cursor="link"
-          onClick={() => setOpen((v) => !v)}
-          aria-expanded={open}
-          aria-controls="site-menu"
-          className="group relative z-[80] flex h-11 w-11 flex-col items-center justify-center gap-[5px] rounded-full border border-paper/30 bg-ink/40 backdrop-blur"
-        >
-          <span
-            className={`block h-[1.5px] w-5 bg-paper transition-transform duration-300 ${
-              open ? "translate-y-[3.5px] rotate-45" : ""
-            }`}
-          />
-          <span
-            className={`block h-[1.5px] w-5 bg-paper transition-transform duration-300 ${
-              open ? "-translate-y-[3.5px] -rotate-45" : ""
-            }`}
-          />
-          <span className="sr-only">{open ? "Close menu" : "Open menu"}</span>
-        </button>
+        <div className="flex items-center gap-3">
+          <MagneticButton
+            href={profile.resumeHref}
+            download
+            className="flex h-11 items-center gap-2 rounded-full border border-paper/30 bg-ink/40 px-4 font-mono text-xs uppercase tracking-widest text-paper backdrop-blur transition-colors duration-200 hover:border-signal hover:text-signal"
+          >
+            <span className="hidden sm:inline">Résumé</span>
+            <span aria-hidden="true">↓</span>
+          </MagneticButton>
+
+          <button
+            type="button"
+            data-cursor="link"
+            onClick={() => setOpen((v) => !v)}
+            aria-expanded={open}
+            aria-controls="site-menu"
+            className="group relative z-[80] flex h-11 w-11 flex-col items-center justify-center gap-[5px] rounded-full border border-paper/30 bg-ink/40 backdrop-blur"
+          >
+            <span
+              className={`block h-[1.5px] w-5 bg-paper transition-transform duration-300 ${
+                open ? "translate-y-[3.5px] rotate-45" : ""
+              }`}
+            />
+            <span
+              className={`block h-[1.5px] w-5 bg-paper transition-transform duration-300 ${
+                open ? "-translate-y-[3.5px] -rotate-45" : ""
+              }`}
+            />
+            <span className="sr-only">{open ? "Close menu" : "Open menu"}</span>
+          </button>
+        </div>
       </div>
 
       <AnimatePresence>
