@@ -64,7 +64,7 @@ export default function Nav() {
           <MagneticButton
             href={profile.resumeHref}
             download
-            className="flex h-11 items-center gap-2 rounded-full border border-paper/30 bg-ink/40 px-4 font-mono text-xs uppercase tracking-widest text-paper backdrop-blur transition-colors duration-200 hover:border-signal hover:text-signal"
+            className="inline-flex h-11 items-center gap-2 rounded-full border border-paper/30 bg-ink/40 px-4 font-mono text-xs uppercase tracking-widest text-paper backdrop-blur transition-colors duration-200 hover:border-signal hover:text-signal"
           >
             <span className="hidden sm:inline">Résumé</span>
             <span aria-hidden="true">↓</span>

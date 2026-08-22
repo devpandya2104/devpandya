@@ -50,7 +50,7 @@ export default function MagneticButton({ children, href, onClick, className, dow
       style={{ x: springX, y: springY }}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className={cn("inline-block transition-colors", className)}
+      className={cn("transition-colors", className)}
     >
       {children}
     </Component>
